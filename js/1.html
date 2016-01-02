@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#tabDiv{width:650px; height: 200px; background:#f40;}
+#tabSpan{position: absolute; left: 200px; top: 0; width: 20px;height: 20px; border-radius: 50%; background: #fff; -cursor: pointer;}
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function(){
+	var oTableTennisDiv=document.getElementById('tabDiv');
+	var oTableTennisSpan=document.getElementById('tabSpan');
+	var TableSpeedX=0;
+	var TableSpeedY=0;
+
+	var TableLastX=0;
+	var TableLastY=0;
+
+	var TableTimer=null;
+
+
+	oTableTennisSpan.onmousedown=function(ev){
+		clearInterval(TableTimer);
+		var oEvt=ev||event;
+		var disX=oEvt.clientX-oTableTennisSpan.offsetLeft;
+		var disY=oEvt.clientY-oTableTennisSpan.offsetTop;
+		document.onmousemove=function(ev){
+			var oEvt=ev||event;
+			oTableTennisSpan.style.left=oEvt.clientX-disX+'px';
+			oTableTennisSpan.style.top=oEvt.clientY-disY+'px';
+
+			TableSpeedX=oTableTennisSpan.offsetLeft-TableLastX;
+			TableSpeedY=oTableTennisSpan.offsetTop-TableLastY;
+
+			TableLastX=oTableTennisSpan.offsetLeft;
+			TableLastY=oTableTennisSpan.offsetTop;
+		};
+
+		document.onmouseup=function(){
+			document.onmousemove=null;
+			document.onmouseup=null;
+			oTableTennisSpan.releaseCapture && oTableTennisSpan.releaseCapture();
+			startmove();
+		};
+		oTableTennisSpan.setCapture && oTableTennisSpan.setCapture();
+		return false;
+
+	};
+
+	function startmove(){
+		clearInterval(TableTimer);
+
+		TableTimer=setInterval(function(){
+			TableSpeedY+=3;
+			//console.log(TableDivH);
+
+			var l=oTableTennisSpan.offsetLeft+TableSpeedX;
+			var t=oTableTennisSpan.offsetTop+TableSpeedY;
+
+				if(t>=oTableTennisDiv.offsetHeight-oTableTennisSpan.offsetHeight){
+					t=oTableTennisDiv.offsetHeight-oTableTennisSpan.offsetHeight;
+					TableSpeedY*=-0.8;
+					TableSpeedX*=0.8;
+				}else if(t<0){
+					t=0;
+					TableSpeedY*=-0.8;
+					TableSpeedX*=0.8;				
+				}
+
+				if(l>oTableTennisDiv.offsetWidth-oTableTennisSpan.offsetWidth){
+					l=oTableTennisDiv.offsetWidth-oTableTennisSpan.offsetWidth;
+					TableSpeedX*=-0.8;
+					TableSpeedY*=0.8;
+				}else if(l<0){
+					l=0;
+					TableSpeedX*=-0.8;
+					TableSpeedY*=0.8;					
+				}
+
+				oTableTennisSpan.style.left=l+'px';
+				oTableTennisSpan.style.top=t+'px';
+
+				if(Math.abs(TableSpeedX)<1){
+					TableSpeedX=0;
+				}
+				if(Math.abs(TableSpeedY)<1){
+					TableSpeedY=0;
+				}
+
+				if(TableSpeedY==0 && TableSpeedX==0 && t==oTableTennisDiv.offsetHeight-oTableTennisSpan.offsetHeight){
+					clearInterval(TableTimer);
+				}
+
+		},30)
+	};
+
+}
+</script>
+<title>无标题文档</title>
+</head>
+
+<body>
+		
+			<div id="tabDiv"><span id="tabSpan"></span></div>
+
+</body>
+</html>
