@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0; list-style: none;}
-html{position: relative;background: url(../images/hc.jpg) no-repeat; background-size: cover; font-family: "Microsoft YaHei"; overflow-x:hidden; overflow-y:hidden; }
+html{position: relative;background: url(../images/hc2.jpg) no-repeat; background-size: cover; font-family: "Microsoft YaHei"; overflow-x:hidden; overflow-y:hidden; }
 a{ text-decoration: none;}
 .item{position: relative;  width: 1000px; height: 1000px; border-radius: 10px; margin: 0 auto;}
 .item1{-background: rgba(3,22,52,0.8);position: relative;}
@@ -34,7 +34,7 @@ a{ text-decoration: none;}
 #list_msg li{ float: left;position:relative; width: 230px; height: 230px;margin-left: 16px; margin-top: 12px; overflow:hidden;z-index: 2}
 #list_msg li span{position: absolute; left:0; top:323px; width: 323px; height: 100px; line-height: 100px; background: #000; opacity:1;text-align: center; color: #fff; font-size: 25px;}
 #maskList{position: fixed; left: 0; top: 0; width: 100%;height:100%; background:rgba(0,0,0,0.7); display: none;opacity: 0; filter: alpha(opacity:0); z-index: 3;}
-.showinfo{position: fixed; left: 50%; top: 50%; margin-left: -600px; margin-top: -300px; width: 1200px; height: 600px; display: none; background: #fff; opacity: 0; border-radius: 15px;}
+.showinfo{position: fixed; left: 50%; top: 50%; margin-left: -600px; margin-top: -300px; width: 1200px; height: 600px; display: none; background: #fff; opacity: 0; border-radius: 15px; background: url(../images/info1.png) no-repeat; background-size: 100% 100%;}
 .showClose{position: absolute;right:0;top:0;width: 30px;height: 30px; background: url(../images/backtrack.png);}
 
 /*第二版面 1*/
@@ -99,7 +99,7 @@ a{ text-decoration: none;}
 #oc{ border-radius: 15px; background: #000; }
 
 /*第二版面 8*/
-#baidu{ position: absolute; left: 0; top: 0; width: 1200px; height: 600px; background: #3AB2FF;  border-radius: 15px;}
+#baidu{ position: absolute; left: 0; top: 0; width: 1200px; height: 600px;-background: #3AB2FF;  border-radius: 15px;}
 #baidu em{display:block; width: 270px; height: 129px; background: url(../images/logo_white.png); background-size: 100% 100%; margin: 40px auto;}
 #baidu .baidu_search{ width: 550px; height: 40px;  margin: 0 auto;}
 #baidu .baidu_search input{ float: left; width: 450px; height: 40px; outline: none; border: none; font-size: 18px;}
@@ -108,6 +108,8 @@ a{ text-decoration: none;}
 #baidu .baidu_ul li{ width: 100%; height: 30px; line-height: 30px; font-size: 20px; font-family: 'kaiti' }
 #baidu .baidu_ul li a{ display: block; width: 100%; height: 100%;text-decoration:none; color: #000; }
 #baidu .baidu_ul li:hover a{ background:pink; }
+
+
 /*第三版面*/
 #p3like{position: absolute; left: 50%; top: 150px; margin-left: -500px; width: 960px; height: 150px; -background: #ccc; padding-left: 40px;}
 #p3like span{font-size: 35px; color: #fff;text-shadow: 0 0 5px #f40; opacity: 0; transition: 0.7s all ease;font-family: 'impact', 'arial';}

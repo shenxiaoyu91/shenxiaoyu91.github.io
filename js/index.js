@@ -7,7 +7,7 @@ $(function(){
 			clearTimeout(timerId);
 			document.title=text.substring(1,text.length)+text.substring(0,1);
 			text=document.title.substring(0,text.length);
-			timerId=setTimeout(newtext,900)
+			timerId=setTimeout(newtext,300)
 		}
 		newtext();
 
