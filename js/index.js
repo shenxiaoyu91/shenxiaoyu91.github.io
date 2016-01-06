@@ -1,5 +1,16 @@
 
 $(function(){
+		//标题滚动
+		var text=document.title;
+		var timerId=null;
+		function newtext(){
+			clearTimeout(timerId);
+			document.title=text.substring(1,text.length)+text.substring(0,1);
+			text=document.title.substring(0,text.length);
+			timerId=setTimeout(newtext,300)
+		}
+		newtext();
+		
 	var $oItem1=$('.item1');
 	var $oItem2=$('.item2');
 	var $oItem3=$('.item3');
