@@ -1,6 +1,8 @@
 
 $(function(){
 		//标题滚动
+		
+$(document).ready(function(){		
 		var text=document.title;
 		var timerId=null;
 		function newtext(){
@@ -803,7 +805,7 @@ var op3btn3=document.querySelector('.btn3');
 		return false;
 	}
 
-
+});
 
 });          //JQ end
 
