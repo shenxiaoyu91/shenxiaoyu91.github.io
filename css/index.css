@@ -34,7 +34,7 @@ a{ text-decoration: none;}
 #list_msg li{ float: left;position:relative; width: 230px; height: 230px;margin-left: 16px; margin-top: 12px; overflow:hidden;z-index: 2}
 #list_msg li span{position: absolute; left:0; top:323px; width: 323px; height: 100px; line-height: 100px; background: #000; opacity:1;text-align: center; color: #fff; font-size: 25px;}
 #maskList{position: fixed; left: 0; top: 0; width: 100%;height:100%; background:rgba(0,0,0,0.7); display: none;opacity: 0; filter: alpha(opacity:0); z-index: 3;}
-.showinfo{position: fixed; left: 50%; top: 50%; margin-left: -600px; margin-top: -300px; width: 1200px; height: 600px; display: none; background: #fff; opacity: 0; border-radius: 15px; background: url(../images/info1.png) no-repeat; background-size: 100% 100%;}
+.showinfo{position: fixed; left: 50%; top: 50%; margin-left: -600px; margin-top: -300px; width: 1200px; height: 600px; display: none; background: #fff; opacity: 0; border-radius: 15px; background: url(../images/info1.jpg) no-repeat; background-size: 100% 100%;}
 .showClose{position: absolute;right:0;top:0;width: 30px;height: 30px; background: url(../images/backtrack.png);}
 
 /*第二版面 1*/
