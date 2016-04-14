@@ -1,309 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>沈晓煜的作品&nbsp;&nbsp;&nbsp;</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript" src="js/move.js"></script>
-	<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
-	<script type="text/javascript" src="js/jquery-easing.js"></script>
-	<script type="text/javascript" src="js/getByClass.js"></script>
-	<script type="text/javascript" src="js/addMouseWheel.js"></script>
-		
-	<script type="text/javascript" src="js/index.js"></script>	
-	<script type="text/javascript" src="js/jsonp.js"></script>
-</head>
-<body>
-<!-- 导航条 -->
-<div id="nav_R">
-	<span class="nav_btn btn1"></span>
-	<span class="nav_btn btn2"></span>
-	<span class="nav_btn btn3"></span>
-	<span class="nav_btn btn4"></span>
-</div>
-<div class="item item1">
-	<div id="p1banner">
-	<p class="p1infofirst">Happy To Jump Three Feet High</p>
-		<a class="prev" href="javascript:;"></a>
-			<ol>
-				<li class="active">1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-			</ol>
-			<ul>
-				<li style="opacity: 1"><img src="images/daodao/T1.jpg"></li>
-				<li><img src="images/daodao/T2.jpg"></li>
-				<li><img src="images/daodao/T3.jpg"></li>
-				<li><img src="images/daodao/T4.jpg"></li>
-			</ul>
-		<a class="next" href="javascript:;"></a>
-		<p class="p1infolast">Not Happy Also Remember Smile</p>
-	</div>
-	
-	
-</div> <!-- end item1 -->
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Shenxiaoyu91.GitHub.io by shenxiaoyu91</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/shenxiaoyu91">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Shenxiaoyu91.GitHub.io</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <div id="no-downloads">
+        <span class="inner">
+        </span>
+      </div>
 
 
-<div class="item item2">
-	<ul id="list_msg">
-		<li class="p2list"><span class="ImgMask">无缝运动</span></li>
-		<li class="p2list"><span class="ImgMask">H5拖拽指针时钟</span></li>
-		<li class="p2list"><span class="ImgMask">手风琴效果</span></li>
-		<li class="p2list"><span class="ImgMask">乒乓球效果</span></li>
-		<li class="p2list"><span class="ImgMask">拉钩特效</span></li>
-		<li class="p2list p2listkey"><span class="ImgMask">键盘彩色冒泡</span></li>
-		<li class="p2list p2listball"><span class="ImgMask">Canvas屏保特效</span></li>
-		<li class="p2list"><span class="ImgMask">百度一下</span></li>
-	</ul>
-	<!-- 第一效果 -->
-	<div class="showinfo">
-		<div id="wufen">
-			<a  id="wfprevi" href="javascript:;">&lt;</a>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-			<ol>
-				<li class="active">1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-			</ol>
-	        <a id="wfnext" href="javascript:;">&gt;</a>
-		</div>
-	<a class="showClose" href="javascript:;"></a></div>
-	<!-- 第二效果 -->
-	<div class="showinfo">
-		<div id="clockdrag">
-			<div class="hours"></div>
-			<div class="min"></div>
-			<div class="sec"></div>
-			<div class="cap"></div>
-<!-- 			<span><em>12</em></span> -->
-		</div>
-	<a class="showClose" href="javascript:;"></a></div>
-	<!-- 第三效果 -->
-	<div class="showinfo">
-		<div id="accordion">
-			<div class="acc1"><img src="images/shoufenq/6.jpg"><span style="background:#C00">1</span></div>
-			<div class="acc2"><img src="images/shoufenq/7.jpg"><span style="background:#af0">2</span></div>
-			<div class="acc3"><img src="images/shoufenq/8.jpg"><span style="background:#c0f">3</span></div>
-			<div class="acc4"><img src="images/shoufenq/9.jpg"><span style="background:#a90">4</span></div>
-		</div>
-	<a class="showClose" href="javascript:;"></a></div>
-	<!-- 第四效果 -->
-	<div class="showinfo">
-		<div id="tabletennis">
-			<div id="tabDiv">
-				<span></span>
-			</div>
-		</div>
-		<a class="showClose" href="javascript:;"></a></div>
-	<!-- 第五效果 -->
-	<div class="showinfo">
-		<ul id="drawhook">
-			<li><img><span>Life Is Too Short<br >No Time To Regret</span></li>
-			<li><img><span>You Are Simple<br >The World Is A Fairy Tale</span></li>
-			<li><img><span>Heart Complex<br >The World Is A Maze</span></li>
-			<li><img><span>Everyone Is Lonely Walker<br >Slowly Become Strong<br >In Walking</span></li>
-			<li><img><span>Hold Up The Head<br >The Tears Will  Fall Back</span></li>
-			<li><img><span>Know A Person By Fate<br >Learn A Person By Patient</span></li>
-			<li><img><span>Grow Up Shold Be Gentle<br >Tender To The World</span></li>
-			<li><img><span>In The Heart Of The Sun<br >Close Your Eyes Won't Lost<br>The Direction</span></li>
-		</ul>
-		<a class="showClose" href="javascript:;"></a></div>
-	<!-- 第六效果 -->
-	<div class="showinfo">
-<div id="keymain">
-		<div class="">
-			<span class="w50" keyCode="27">Esc</span>
-			<span class="w50" keyCode="112">F1</span>
-			<span class="w50" keyCode="113">F2</span>
-			<span class="w50" keyCode="114">F3</span>
-			<span class="w50" keyCode="115">F4</span>
-			<span class="w50" keyCode="116">F5</span>
-			<span class="w50" keyCode="117">F6</span>
-			<span class="w50" keyCode="118">F7</span>
-			<span class="w50" keyCode="119">F8</span>
-			<span class="w50" keyCode="120">F9</span>
-			<span class="w50" keyCode="121">F10</span>
-			<span class="w50" keyCode="122">F11</span>
-			<span class="w50" keyCode="123">F12</span>
-		</div>
+      <span class="banner-fix"></span>
 
-		<div class="">
-			<span class="w50" keyCode="192">`</span>
-			<span class="w50" keyCode="49">1</span>
-			<span class="w50" keyCode="50">2</span>
-			<span class="w50" keyCode="51">3</span>
-			<span class="w50" keyCode="52">4</span>
-			<span class="w50" keyCode="53">5</span>
-			<span class="w50" keyCode="54">6</span>
-			<span class="w50" keyCode="55">7</span>
-			<span class="w50" keyCode="56">8</span>
-			<span class="w50" keyCode="57">9</span>
-			<span class="w50" keyCode="48">0</span>
-			<span class="w50" keyCode="189">-</span>
-			<span class="w50" keyCode="187">=</span>
-			<span class="w100" keyCode="8">Backspace</span>
-		</div>
 
-		<div class="">
-			<span class="w90" keyCode="9">Tab</span>
-			<span class="w50" keyCode="81">Q</span>
-			<span class="w50" keyCode="87">W</span>
-			<span class="w50" keyCode="69">E</span>
-			<span class="w50" keyCode="82">R</span>
-			<span class="w50" keyCode="84">T</span>
-			<span class="w50" keyCode="89">Y</span>
-			<span class="w50" keyCode="85">U</span>
-			<span class="w50" keyCode="73">I</span>
-			<span class="w50" keyCode="79">O</span>
-			<span class="w50" keyCode="80">P</span>
-			<span class="w50" keyCode="219">[</span>
-			<span class="w50" keyCode="221">]</span>
-			<span class="w50" keyCode="220">\</span>
-		</div>
+      <section id="main_content">
+        <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-		<div class="">
-			<span class="w100" keyCode="20">Caps Lock</span>
-			<span class="w50" keyCode="65">A</span>
-			<span class="w50" keyCode="83">S</span>
-			<span class="w50" keyCode="68">D</span>
-			<span class="w50" keyCode="70">F</span>
-			<span class="w50" keyCode="71">G</span>
-			<span class="w50" keyCode="72">H</span>
-			<span class="w50" keyCode="74">J</span>
-			<span class="w50" keyCode="75">K</span>
-			<span class="w50" keyCode="76">L</span>
-			<span class="w50" keyCode="186">;</span>
-			<span class="w50" keyCode="222">'</span>
-			<span class="w110" keyCode="13">Enter</span>
-		</div>
-		<div class="">
-			<span class="w120" keyCode="16">Shift</span>
-			<span class="w50" keyCode="90">Z</span>
-			<span class="w50" keyCode="88">X</span>
-			<span class="w50" keyCode="67">C</span>
-			<span class="w50" keyCode="86">V</span>
-			<span class="w50" keyCode="66">B</span>
-			<span class="w50" keyCode="78">N</span>
-			<span class="w50" keyCode="77">M</span>
-			<span class="w50" keyCode="188">,</span>
-			<span class="w50" keyCode="190">.</span>
-			<span class="w50" keyCode="191">/</span>
-			<span class="w100" keyCode="16">Shift</span>
-			<span class="w50" keyCode="38">Up</span>
-		</div>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
-		<div class="">
-			<span class="w60" keyCode="17">Ctrl</span>
-			<span class="w50" keyCode="">Fn</span>
-			<span class="w50" keyCode="">Win</span>
-			<span class="w50" keyCode="18">Alt</span>
-			<span class="w350" keyCode="32"></span>
-			<span class="w50" keyCode="18">Alt</span>
-			<span class="w50" keyCode="">Copy</span>
-			<span class="w50" keyCode="17">Ctrl</span>
-			<span class="w50" keyCode="37">Left</span>
-			<span class="w50" keyCode="40">Down</span>
-			<span class="w50" keyCode="39">Right</span>
-		</div>
-	</div>	
-	<a class="showClose" href="javascript:;"></a></div>
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-	<!-- 第七效果 -->
-	<div class="showinfo">
-	<canvas id="oc"></canvas>
-	<a class="showClose" href="javascript:;"></a></div>
-	<!-- 第八效果 -->
-	<div class="showinfo">
-		<div id="baidu">
-			<em></em>
-			<div class="baidu_search"><input><a href="">百度一下</a></div>
-			<ul class="baidu_ul">
-<!-- 				<li><a href="">xxxx</a></li> -->
-			</ul>
-		</div>
-	<a class="showClose" href="javascript:;"></a></div>
-</div> <!-- end item2 -->
-<div class="item item3">
-	<div id="p3like">
-		<span></span>
-	</div>
-	<ul id="p3skill">
-		<li>
-			<div class="skilltitle">HTML5</div>
-			<div class="skillcontent">
-				<p class="contenttitle">HTML-HTML5</p>
-				<p class="contentinfo">熟悉W3C标准<br />
-				书写结构清晰 易维护的HTML</p>
-			</div>
-		</li>
-		<li>
-			<div class="skilltitle">CSS3</div>
-			<div class="skillcontent">
-				<p class="contenttitle">CSS-CSS3</p>
-				<p class="contentinfo">熟练使用CSS2 CSS3<br />
-				注意各种CSS规范 兼容各大浏览器
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="skilltitle">JavaScript</div>
-			<div class="skillcontent">
-				<p class="contenttitle">ECMAScript BOM DOM</p>
-				<p class="contentinfo">熟悉各浏览器兼容问题<br />
-				熟练运用JavaScript 注重交互体验
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="skilltitle">JQuery</div>
-			<div class="skillcontent">
-				<p class="contenttitle">JQuery</p>
-				<p class="contentinfo">熟练使用JQuery框架<br />
-				了解其原理 能适当修改
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="skilltitle">Ajax</div>
-			<div class="skillcontent">
-				<p class="contenttitle">Ajax Jsonp</p>
-				<p class="contentinfo">较为熟悉数据交互<br />
+<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
 
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="p3more">···</div>
-		</li>
-	</ul>
-</div> <!-- end item3 -->
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
 
-<!-- 个人信息 -->
-<div id="mask"></div>
-<div id="maskList"></div>
-<div id="my_info">
-<div id="callme">
-	<div class="front">
-		<span><em style="background: url(images/icon/icon_qq.png) no-repeat; background-size: 100% 100%;"></em><strong>947130276</strong></span>
-		<span><em style="background: url(images/icon/icon_wx1.png) no-repeat; background-size: 100% 100%;"></em><strong>shenxiaoyu002</strong></span>
-		<span><em style="background: url(images/icon/icon_phone.png) no-repeat; background-size: 100% 100%;"></em><strong>18651028723</strong></span>
-		<span><em style="background: url(images/icon/icon_email.png) no-repeat; background-size: 100% 100%;"></em><strong class="email">shenxiaoyu9105@163.com</strong></span>
-	</div>
-	<div class="back"></div>
-	<div class="left"></div>
-	<div class="right"></div>
-	<div class="top"></div>
-	<div class="bottom"></div>
-</div>
-	<a id="my_info_close" href="javascript:;"></a>
-</div>
-</div></body>
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>Projects by <a href="https://github.com/shenxiaoyu91">shenxiaoyu91</a> can be found on <a href="https://github.com/shenxiaoyu91">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
 </html>
